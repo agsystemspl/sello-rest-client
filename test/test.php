@@ -10,4 +10,8 @@ $client = new \AGSystems\REST\Sello\Client(
     getenv('API_KEY')
 );
 
-var_export($client->me->get());
+
+// v3
+var_export($client->v3->account->get());
+// v5
+var_export($client->v5->account->get());
