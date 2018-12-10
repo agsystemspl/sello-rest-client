@@ -1,0 +1,31 @@
+{
+    "name": "agsystemspl/toggl-rest-client",
+    "description": "Toggl REST Client",
+    "keywords": ["toggl", "rest", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Feruś",
+            "email": "mindc@o2.pl"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"php": ">=7.0",
+        "agsystemspl/abstract-rest-client": "dev-master"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AGSystems\\REST\\Toggl\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/agsystemspl/abstract-rest-client"
+        }
+    ]
+}
