@@ -1,7 +1,7 @@
 {
-    "name": "agsystemspl/toggl-rest-client",
-    "description": "Toggl REST Client",
-    "keywords": ["toggl", "rest", "api"],
+    "name": "agsystemspl/sello-rest-client",
+    "description": "Sello REST Client",
+    "keywords": ["sello", "rest", "api"],
     "license": "MIT",
     "authors": [
         {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AGSystems\\REST\\Toggl\\": "src/"
+            "AGSystems\\REST\\Sello\\": "src/"
         }
     },
     "repositories": [

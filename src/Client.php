@@ -1,25 +1,28 @@
 <?php
 
-namespace AGSystems\REST\Toggl;
+namespace AGSystems\REST\Sello;
 
 use AGSystems\REST\AbstractClient;
 
 class Client extends AbstractClient
 {
-    protected $accessToken;
+    protected $apiToken;
+    protected $apiKey;
 
-    public function __construct($accessToken)
+    public function __construct($apiToken, $apiKey)
     {
-        $this->accessToken = $accessToken;
+        $this->apiToken = $apiToken;
+        $this->apiKey = $apiKey;
     }
 
     protected function withOptions()
     {
         return [
-            'base_uri' => 'https://www.toggl.com/api/v8/',
-            'auth' => [
-                $this->accessToken,
-                'api_token',
+            'base_uri' => 'https://api.sello.io/',
+            'headers' => [
+                'token' => $this->apiToken, // v3
+                'key' => $this->apiKey, // v3
+                'authorization' => $this->apiToken . ':' . $this->apiKey, // v5
             ],
         ];
     }
