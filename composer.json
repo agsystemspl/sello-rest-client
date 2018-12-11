@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AGSystems\\REST\\Sello\\": "src/"
+            "AGSystems\\Sello\\REST\\": "src/"
         }
     },
     "repositories": [
