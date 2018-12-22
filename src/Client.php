@@ -15,7 +15,7 @@ class Client extends AbstractClient
         $this->apiKey = $apiKey;
     }
 
-    protected function withOptions()
+    protected function clientOptions()
     {
         return [
             'base_uri' => 'https://api.sello.io/',
